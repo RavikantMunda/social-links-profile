@@ -1,0 +1,98 @@
+:root{
+    --web-bg-color: hsl(0, 0%, 8%);
+    --card-bg-color: hsl(0, 0%, 12%);
+    --location-color: hsl(75, 94%, 57%);
+    --cards-color: hsl(0, 0%, 20%);
+}
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+@font-face {
+    font-family: 'Interworld';
+    src: url('fonts/interworld.ttf');
+}
+body
+{
+    display:flex;
+    justify-content: center;
+    background-color: var(--web-bg-color);
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+    font-family: 'Interworld';
+} 
+
+.main
+{
+    width: auto;
+    margin-top:25px;
+    border-radius: 5px;
+    background-color: var(--card-bg-color);
+}
+.avatar
+{
+    width:62px;
+    border-radius: 50%;
+}
+.avatar-main
+{
+    padding-top: 2rem;
+}
+.name
+{
+    font-size:28px;
+    font-weight:550;
+    margin-bottom:0px;
+}
+.location
+{
+    margin-top:9px;
+    margin-bottom: 19px;
+    font-weight: 600;
+    font-size: 15px;
+    color: var(--location-color);
+}
+.classic
+{
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+.the-box
+{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.links
+{
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    
+    background-color: var(--cards-color);
+   
+
+}
+.links-text
+{
+    display: inline-block;
+    font-family: inherit;
+    color: inherit;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    font-weight: bold;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-decoration: none;
+}
+.links:hover{
+    color: var(--web-bg-color);
+    background-color:var(--location-color);
+}
+.links-text:focus {
+    color: var(--web-bg-color);
+    background-color: var(--location-color);
+    outline: none;
+
+}
